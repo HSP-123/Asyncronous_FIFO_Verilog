@@ -162,17 +162,15 @@ Test sequence:
    self-checking `$display`/assertion-based pass/fail output, so results
    should be verified by viewing the waveform.
 
-## Simulation
-
 ## Simulation (AMD Xilinx Vivado)
 
 You can run this simulation using Vivado:
 
 ### Using Vivado:
 1. Create a new RTL project in Vivado.
-2. Add the source files (`pointer_handler.v`, `syncronisers_and_memory.v`, `async_fifo.v`) and the testbench (`Testb.v`).
+2. Add the source files (`pointer_handler.v`, `syncronisers_and_memory.v`) and the testbench (`Testb.v`).
 3. Set `Testb` as the top module for simulation.
 4. Under the Flow Navigator, click **Run Simulation** -> **Run Behavioral Simulation**.
 
 ### Signals worth watching in the Vivado waveform viewer:
-`wfull`, `rempty`, `wptr_gray`, `rptr_gray`, `rptr_gray_wclk`, `wptr_gray_rclk`, `wdata`, `rdata`.
+`wfull`, `rempty`, `wptr_gray`, `rptr_gray`, `rptr_gray_wclk`, `wptr_gray_rclk`, `wdata`, `rdata`..
